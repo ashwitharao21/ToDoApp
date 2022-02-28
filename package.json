@@ -1,7 +1,7 @@
 {
   "name": "todolistapp",
   "private": true,
-  "homepage": "/ToDoApp/dist/",
+  "homepage": "https://ashwitharao21.github.io/ToDoApp/dist/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
