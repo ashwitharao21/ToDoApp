@@ -1,7 +1,7 @@
 {
   "name": "todolistapp",
   "private": true,
-  "homepage": "/ToDoListApp/dist/",
+  "homepage": "/ToDoApp/dist/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
