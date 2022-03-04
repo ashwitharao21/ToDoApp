@@ -3,7 +3,7 @@ import './App.css';
 import Header from './header';
 import data from './data';
 import ToDoList from './ToDoList';
-
+import Form from './Form';
 
  
 function App() {
@@ -24,9 +24,16 @@ function App() {
     setToDoList(filtered);
   }
 
+  const addTask = (userInput) => {
+    let copy = [...toDoList];
+    copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
+    setToDoList(copy);
+  }
+
  return (
    <div className="App">
     	<Header /> 
+      <Form addTask={addTask} />
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
    </div>
  );
